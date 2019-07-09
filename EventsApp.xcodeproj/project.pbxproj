@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA92AA822D55DA100696014 /* EventsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AA722D55DA000696014 /* EventsAppTests.swift */; };
 		CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599B22D554E4004D43F3 /* AppDelegate.swift */; };
 		CDE1599E22D554E4004D43F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599D22D554E4004D43F3 /* ViewController.swift */; };
 		CDE159A122D554E4004D43F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE1599F22D554E4004D43F3 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDA92AA722D55DA000696014 /* EventsAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsAppTests.swift; sourceTree = "<group>"; };
 		CDE1599822D554E4004D43F3 /* EventsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE1599B22D554E4004D43F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE1599D22D554E4004D43F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		CDE159AF22D554E5004D43F3 /* EventsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDA92AA722D55DA000696014 /* EventsAppTests.swift */,
 				CDE159B222D554E5004D43F3 /* Info.plist */,
 			);
 			path = EventsAppTests;
@@ -146,6 +149,7 @@
 					};
 					CDE159AB22D554E5004D43F3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = CDE1599722D554E4004D43F3;
 					};
 				};
@@ -203,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA92AA822D55DA100696014 /* EventsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +402,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AC5F23QLW;
 				INFOPLIST_FILE = EventsAppTests/Info.plist;
@@ -407,6 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.GabrielSilveira.EventsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsApp.app/EventsApp";
@@ -418,6 +425,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AC5F23QLW;
 				INFOPLIST_FILE = EventsAppTests/Info.plist;
