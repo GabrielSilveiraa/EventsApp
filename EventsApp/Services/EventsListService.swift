@@ -8,21 +8,8 @@
 
 import Foundation
 
-enum EventsListServiceError: Error, Equatable {
-    case failed
-}
-
-extension EventsListServiceError: LocalizedError {
-    var errorDescription: String? {
-        switch self {
-        case .failed:
-            return "failedError".localized
-        }
-    }
-}
-
 protocol EventsListServiceProtocol: AnyObject {
-    func getEventsList(completion: @escaping (Result<[Bool], Error>) -> Void)
+    func getEventsList(completion: @escaping (Result<Events, Error>) -> Void)
 }
 
 class EventsListService {
@@ -34,11 +21,10 @@ class EventsListService {
 }
 
 extension EventsListService: EventsListServiceProtocol {
-    func getEventsList(completion: @escaping (Result<[Bool], Error>) -> Void) {
+    func getEventsList(completion: @escaping (Result<Events, Error>) -> Void) {
         let endPoint = EventApi.eventsList
-        networkManager.request(endPoint) { (result: Result<Bool, Error>)  in
-            
+        networkManager.request(endPoint) { (result: Result<Events, Error>)  in
+            completion(result)
         }
     }
 }
-

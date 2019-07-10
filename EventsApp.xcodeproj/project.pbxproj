@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
+		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
+		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
+		CD8AC17D22D66890004539C9 /* EventsListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17C22D66890004539C9 /* EventsListServiceTests.swift */; };
+		CD8AC18022D66E22004539C9 /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17F22D66E22004539C9 /* Event.json */; };
 		CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAB22D572A900696014 /* NetworkResponse.swift */; };
 		CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAC22D572A900696014 /* NetworkManager.swift */; };
 		CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAD22D572A900696014 /* ParameterEncoding.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
+		CD8AC17C22D66890004539C9 /* EventsListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListServiceTests.swift; sourceTree = "<group>"; };
+		CD8AC17F22D66E22004539C9 /* Event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
 		CDA92AAB22D572A900696014 /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		CDA92AAC22D572A900696014 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CDA92AAD22D572A900696014 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -78,13 +88,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD8AC16F22D65BF0004539C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17022D65C07004539C9 /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD8AC17222D66558004539C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17322D66566004539C9 /* XCTestCase.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD8AC17522D66591004539C9 /* ResponseMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17722D665AF004539C9 /* EventsSuccess.json */,
+			);
+			path = ResponseMocks;
+			sourceTree = "<group>";
+		};
+		CD8AC17622D66597004539C9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17A22D66839004539C9 /* Scenes */,
+				CD8AC17922D667E9004539C9 /* Networking */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CD8AC17922D667E9004539C9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD8AC17A22D66839004539C9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17B22D66840004539C9 /* EventsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CD8AC17B22D66840004539C9 /* EventsList */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17C22D66890004539C9 /* EventsListServiceTests.swift */,
+			);
+			path = EventsList;
+			sourceTree = "<group>";
+		};
+		CD8AC17E22D66DBB004539C9 /* ModelMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AC17F22D66E22004539C9 /* Event.json */,
+			);
+			path = ModelMocks;
+			sourceTree = "<group>";
+		};
 		CDA92AA922D572A900696014 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				CDA92AAA22D572A900696014 /* Manager */,
 				CDA92AB022D572A900696014 /* EndPoint */,
 				CDA92AB222D572A900696014 /* Environment */,
-				CDA92AB522D572A900696014 /* Service */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -118,12 +192,12 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
-		CDA92AB522D572A900696014 /* Service */ = {
+		CDA92AB522D572A900696014 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				CDA92AC622D57F3B00696014 /* EventsListService.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CDA92AC022D5750E00696014 /* Resources */ = {
@@ -165,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				CDA92AA922D572A900696014 /* Networking */,
+				CDA92AB522D572A900696014 /* Services */,
+				CD8AC16F22D65BF0004539C9 /* Models */,
 				CDA92AC322D5770400696014 /* Extensions */,
 				CDA92AC022D5750E00696014 /* Resources */,
 				CDE1599B22D554E4004D43F3 /* AppDelegate.swift */,
@@ -179,7 +255,10 @@
 		CDE159AF22D554E5004D43F3 /* EventsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */,
+				CD8AC17622D66597004539C9 /* Tests */,
+				CD8AC17522D66591004539C9 /* ResponseMocks */,
+				CD8AC17E22D66DBB004539C9 /* ModelMocks */,
+				CD8AC17222D66558004539C9 /* Extensions */,
 				CDE159B222D554E5004D43F3 /* Info.plist */,
 			);
 			path = EventsAppTests;
@@ -279,6 +358,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8AC18022D66E22004539C9 /* Event.json in Resources */,
+				CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +374,7 @@
 				CDA92AC522D578F400696014 /* String.swift in Sources */,
 				CDE1599E22D554E4004D43F3 /* ViewController.swift in Sources */,
 				CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */,
+				CD8AC17122D65C07004539C9 /* Event.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
 				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,
 				CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */,
@@ -307,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8AC17D22D66890004539C9 /* EventsListServiceTests.swift in Sources */,
+				CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */,
 				CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
