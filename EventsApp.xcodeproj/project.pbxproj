@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDA92AA822D55DA100696014 /* EventsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AA722D55DA000696014 /* EventsAppTests.swift */; };
+		CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAB22D572A900696014 /* NetworkResponse.swift */; };
+		CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAC22D572A900696014 /* NetworkManager.swift */; };
+		CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAD22D572A900696014 /* ParameterEncoding.swift */; };
+		CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAE22D572A900696014 /* HTTPMethod.swift */; };
+		CDA92ABB22D572A900696014 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AAF22D572A900696014 /* EndPointType.swift */; };
+		CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AB122D572A900696014 /* EventEndPoint.swift */; };
+		CDA92ABD22D572A900696014 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AB322D572A900696014 /* Environment.swift */; };
+		CDA92ABE22D572A900696014 /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA92AB422D572A900696014 /* Environment.plist */; };
+		CDA92AC222D5752500696014 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDA92AC122D5752400696014 /* Localizable.strings */; };
+		CDA92AC522D578F400696014 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC422D578F400696014 /* String.swift */; };
+		CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC622D57F3B00696014 /* EventsListService.swift */; };
+		CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */; };
 		CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599B22D554E4004D43F3 /* AppDelegate.swift */; };
 		CDE1599E22D554E4004D43F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599D22D554E4004D43F3 /* ViewController.swift */; };
 		CDE159A122D554E4004D43F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE1599F22D554E4004D43F3 /* Main.storyboard */; };
@@ -26,7 +37,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CDA92AA722D55DA000696014 /* EventsAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsAppTests.swift; sourceTree = "<group>"; };
+		CDA92AAB22D572A900696014 /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		CDA92AAC22D572A900696014 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CDA92AAD22D572A900696014 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		CDA92AAE22D572A900696014 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CDA92AAF22D572A900696014 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		CDA92AB122D572A900696014 /* EventEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEndPoint.swift; sourceTree = "<group>"; };
+		CDA92AB322D572A900696014 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CDA92AB422D572A900696014 /* Environment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
+		CDA92AC122D5752400696014 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CDA92AC422D578F400696014 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CDA92AC622D57F3B00696014 /* EventsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListService.swift; sourceTree = "<group>"; };
+		CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		CDE1599822D554E4004D43F3 /* EventsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE1599B22D554E4004D43F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE1599D22D554E4004D43F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +78,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDA92AA922D572A900696014 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AAA22D572A900696014 /* Manager */,
+				CDA92AB022D572A900696014 /* EndPoint */,
+				CDA92AB222D572A900696014 /* Environment */,
+				CDA92AB522D572A900696014 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CDA92AAA22D572A900696014 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AAB22D572A900696014 /* NetworkResponse.swift */,
+				CDA92AAC22D572A900696014 /* NetworkManager.swift */,
+				CDA92AAD22D572A900696014 /* ParameterEncoding.swift */,
+				CDA92AAE22D572A900696014 /* HTTPMethod.swift */,
+				CDA92AAF22D572A900696014 /* EndPointType.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CDA92AB022D572A900696014 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AB122D572A900696014 /* EventEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		CDA92AB222D572A900696014 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AB322D572A900696014 /* Environment.swift */,
+				CDA92AB422D572A900696014 /* Environment.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CDA92AB522D572A900696014 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AC622D57F3B00696014 /* EventsListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CDA92AC022D5750E00696014 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AC122D5752400696014 /* Localizable.strings */,
+				CDE159A222D554E5004D43F3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDA92AC322D5770400696014 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDA92AC422D578F400696014 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CDE1598F22D554E4004D43F3 = {
 			isa = PBXGroup;
 			children = (
@@ -77,10 +164,12 @@
 		CDE1599A22D554E4004D43F3 /* EventsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDA92AA922D572A900696014 /* Networking */,
+				CDA92AC322D5770400696014 /* Extensions */,
+				CDA92AC022D5750E00696014 /* Resources */,
 				CDE1599B22D554E4004D43F3 /* AppDelegate.swift */,
 				CDE1599D22D554E4004D43F3 /* ViewController.swift */,
 				CDE1599F22D554E4004D43F3 /* Main.storyboard */,
-				CDE159A222D554E5004D43F3 /* Assets.xcassets */,
 				CDE159A422D554E5004D43F3 /* LaunchScreen.storyboard */,
 				CDE159A722D554E5004D43F3 /* Info.plist */,
 			);
@@ -90,7 +179,7 @@
 		CDE159AF22D554E5004D43F3 /* EventsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDA92AA722D55DA000696014 /* EventsAppTests.swift */,
+				CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */,
 				CDE159B222D554E5004D43F3 /* Info.plist */,
 			);
 			path = EventsAppTests;
@@ -178,6 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA92AC222D5752500696014 /* Localizable.strings in Resources */,
+				CDA92ABE22D572A900696014 /* Environment.plist in Resources */,
 				CDE159A622D554E5004D43F3 /* LaunchScreen.storyboard in Resources */,
 				CDE159A322D554E5004D43F3 /* Assets.xcassets in Resources */,
 				CDE159A122D554E4004D43F3 /* Main.storyboard in Resources */,
@@ -198,8 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */,
+				CDA92AC522D578F400696014 /* String.swift in Sources */,
 				CDE1599E22D554E4004D43F3 /* ViewController.swift in Sources */,
+				CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */,
+				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
+				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,
+				CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */,
+				CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */,
 				CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */,
+				CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */,
+				CDA92ABB22D572A900696014 /* EndPointType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA92AA822D55DA100696014 /* EventsAppTests.swift in Sources */,
+				CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
