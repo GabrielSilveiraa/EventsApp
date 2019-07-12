@@ -19,6 +19,10 @@
 		CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */; };
 		CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */; };
 		CD2F015722D818A500A06645 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015622D818A500A06645 /* Dynamic.swift */; };
+		CD2F2E5722D8FB940095FB7C /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5622D8FB940095FB7C /* CoordinatorTests.swift */; };
+		CD2F2E5B22D8FC1A0095FB7C /* EventsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */; };
+		CD2F2E5C22D8FC1A0095FB7C /* EventsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5A22D8FC1A0095FB7C /* EventsListViewModelTests.swift */; };
+		CD2F2E5E22D8FD860095FB7C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5D22D8FD860095FB7C /* UIViewController.swift */; };
 		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
 		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
 		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
@@ -64,6 +68,10 @@
 		CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListTableViewCell.swift; sourceTree = "<group>"; };
 		CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListCellViewModelViewModel.swift; sourceTree = "<group>"; };
 		CD2F015622D818A500A06645 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		CD2F2E5622D8FB940095FB7C /* CoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewControllerTests.swift; sourceTree = "<group>"; };
+		CD2F2E5A22D8FC1A0095FB7C /* EventsListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewModelTests.swift; sourceTree = "<group>"; };
+		CD2F2E5D22D8FD860095FB7C /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
@@ -226,17 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				CD8AC17A22D66839004539C9 /* Scenes */,
-				CD8AC17922D667E9004539C9 /* Networking */,
+				CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */,
+				CD2F2E5622D8FB940095FB7C /* CoordinatorTests.swift */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		CD8AC17922D667E9004539C9 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		CD8AC17A22D66839004539C9 /* Scenes */ = {
@@ -250,6 +251,8 @@
 		CD8AC17B22D66840004539C9 /* EventsList */ = {
 			isa = PBXGroup;
 			children = (
+				CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */,
+				CD2F2E5A22D8FC1A0095FB7C /* EventsListViewModelTests.swift */,
 				CD8AC17C22D66890004539C9 /* EventsListServiceTests.swift */,
 			);
 			path = EventsList;
@@ -323,6 +326,7 @@
 		CDA92AC322D5770400696014 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CD2F2E5D22D8FD860095FB7C /* UIViewController.swift */,
 				CDA92AC422D578F400696014 /* String.swift */,
 			);
 			path = Extensions;
@@ -538,6 +542,7 @@
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
 				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,
 				CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */,
+				CD2F2E5E22D8FD860095FB7C /* UIViewController.swift in Sources */,
 				CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */,
 				CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */,
 				CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */,
@@ -552,9 +557,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2F2E5B22D8FC1A0095FB7C /* EventsListViewControllerTests.swift in Sources */,
+				CD2F2E5722D8FB940095FB7C /* CoordinatorTests.swift in Sources */,
 				CD8AC17D22D66890004539C9 /* EventsListServiceTests.swift in Sources */,
 				CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */,
 				CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */,
+				CD2F2E5C22D8FC1A0095FB7C /* EventsListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

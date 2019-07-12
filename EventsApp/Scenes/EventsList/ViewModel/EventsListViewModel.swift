@@ -58,13 +58,11 @@ extension EventsListViewModel: EventsListViewModelProtocol {
     func didSelect(row: Int) {
         let event = events[row]
         if Thread.isMainThread {
-            
+            navigationDelegate?.goToDetails(event: event)
         } else {
             DispatchQueue.main.async {
-                
+                self.navigationDelegate?.goToDetails(event: event)
             }
         }
     }
-    
 }
-

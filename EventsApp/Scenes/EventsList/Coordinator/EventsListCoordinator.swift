@@ -9,7 +9,7 @@
 import UIKit
 
 protocol EventsListNavigationDelegate: AnyObject {
-    
+    func goToDetails(event: Event)
 }
 
 class EventsListCoordinator {
@@ -30,5 +30,7 @@ extension EventsListCoordinator: Coordinator {
 }
 
 extension EventsListCoordinator: EventsListNavigationDelegate {
-  
+    func goToDetails(event: Event) {
+        
+    }
 }

@@ -30,7 +30,9 @@ final class EventsListViewController: UIViewController {
     // MARK: - Life Cycle
     override func loadView() {
         super.loadView()
+        
         view = baseView
+        title = viewModel.navigationTitle
     }
     
     override func viewDidLoad() {
@@ -52,7 +54,7 @@ final class EventsListViewController: UIViewController {
         
         viewModel.error.bind { [weak self] error in
             guard let self = self, let error = error else { return }
-            
+            self.showAlert(message: error)
         }
     }
 }
