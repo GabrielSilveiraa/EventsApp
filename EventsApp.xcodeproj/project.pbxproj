@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2F013722D80ECD00A06645 /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013422D80ECD00A06645 /* EventsListViewController.swift */; };
+		CD2F013822D80ECD00A06645 /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013522D80ECD00A06645 /* EventsListView.swift */; };
+		CD2F013922D80ECD00A06645 /* EventsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013622D80ECD00A06645 /* EventsListViewModel.swift */; };
+		CD2F013D22D80F1C00A06645 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013C22D80F1C00A06645 /* BaseView.swift */; };
+		CD2F014022D80F9E00A06645 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013F22D80F9E00A06645 /* Coordinator.swift */; };
+		CD2F014222D80FD000A06645 /* EventsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */; };
+		CD2F014422D8108900A06645 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F014322D8108900A06645 /* AppCoordinator.swift */; };
+		CD2F014E22D8142400A06645 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2F014C22D8142400A06645 /* Kingfisher.framework */; };
+		CD2F014F22D8142400A06645 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2F014D22D8142400A06645 /* SnapKit.framework */; };
+		CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */; };
+		CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */; };
+		CD2F015722D818A500A06645 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015622D818A500A06645 /* Dynamic.swift */; };
 		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
 		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
 		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
@@ -25,8 +37,6 @@
 		CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC622D57F3B00696014 /* EventsListService.swift */; };
 		CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */; };
 		CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599B22D554E4004D43F3 /* AppDelegate.swift */; };
-		CDE1599E22D554E4004D43F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599D22D554E4004D43F3 /* ViewController.swift */; };
-		CDE159A122D554E4004D43F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE1599F22D554E4004D43F3 /* Main.storyboard */; };
 		CDE159A322D554E5004D43F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE159A222D554E5004D43F3 /* Assets.xcassets */; };
 		CDE159A622D554E5004D43F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE159A422D554E5004D43F3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -42,6 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD2F013422D80ECD00A06645 /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
+		CD2F013522D80ECD00A06645 /* EventsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
+		CD2F013622D80ECD00A06645 /* EventsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewModel.swift; sourceTree = "<group>"; };
+		CD2F013C22D80F1C00A06645 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CD2F013F22D80F9E00A06645 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListCoordinator.swift; sourceTree = "<group>"; };
+		CD2F014322D8108900A06645 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CD2F014C22D8142400A06645 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = EventsApp/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		CD2F014D22D8142400A06645 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = EventsApp/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListTableViewCell.swift; sourceTree = "<group>"; };
+		CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListCellViewModelViewModel.swift; sourceTree = "<group>"; };
+		CD2F015622D818A500A06645 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
@@ -61,8 +83,6 @@
 		CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		CDE1599822D554E4004D43F3 /* EventsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE1599B22D554E4004D43F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDE1599D22D554E4004D43F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDE159A022D554E4004D43F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE159A222D554E5004D43F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDE159A522D554E5004D43F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDE159A722D554E5004D43F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2F014E22D8142400A06645 /* Kingfisher.framework in Frameworks */,
+				CD2F014F22D8142400A06645 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2F012F22D80E5400A06645 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F013022D80E5A00A06645 /* EventsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CD2F013022D80E5A00A06645 /* EventsList */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F013A22D80EDB00A06645 /* View */,
+				CDA92AB522D572A900696014 /* Service */,
+				CD2F013322D80E8000A06645 /* Coordinator */,
+				CD2F013222D80E7900A06645 /* ViewModel */,
+				CD2F013122D80E7100A06645 /* ViewController */,
+			);
+			path = EventsList;
+			sourceTree = "<group>";
+		};
+		CD2F013122D80E7100A06645 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F013422D80ECD00A06645 /* EventsListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD2F013222D80E7900A06645 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */,
+				CD2F013622D80ECD00A06645 /* EventsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD2F013322D80E8000A06645 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CD2F013A22D80EDB00A06645 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F015122D8172200A06645 /* Cell */,
+				CD2F013522D80ECD00A06645 /* EventsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD2F013B22D80F1100A06645 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F015622D818A500A06645 /* Dynamic.swift */,
+				CD2F013C22D80F1C00A06645 /* BaseView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD2F013E22D80F8800A06645 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F013F22D80F9E00A06645 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CD2F015022D8142700A06645 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F014C22D8142400A06645 /* Kingfisher.framework */,
+				CD2F014D22D8142400A06645 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD2F015122D8172200A06645 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CD8AC16F22D65BF0004539C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,17 +302,18 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
-		CDA92AB522D572A900696014 /* Services */ = {
+		CDA92AB522D572A900696014 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				CDA92AC622D57F3B00696014 /* EventsListService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CDA92AC022D5750E00696014 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD2F014322D8108900A06645 /* AppCoordinator.swift */,
 				CDA92AC122D5752400696014 /* Localizable.strings */,
 				CDE159A222D554E5004D43F3 /* Assets.xcassets */,
 			);
@@ -238,14 +349,15 @@
 		CDE1599A22D554E4004D43F3 /* EventsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD2F012F22D80E5400A06645 /* Scenes */,
 				CDA92AA922D572A900696014 /* Networking */,
-				CDA92AB522D572A900696014 /* Services */,
 				CD8AC16F22D65BF0004539C9 /* Models */,
+				CD2F013E22D80F8800A06645 /* Protocols */,
 				CDA92AC322D5770400696014 /* Extensions */,
+				CD2F013B22D80F1100A06645 /* Utils */,
 				CDA92AC022D5750E00696014 /* Resources */,
+				CD2F015022D8142700A06645 /* Frameworks */,
 				CDE1599B22D554E4004D43F3 /* AppDelegate.swift */,
-				CDE1599D22D554E4004D43F3 /* ViewController.swift */,
-				CDE1599F22D554E4004D43F3 /* Main.storyboard */,
 				CDE159A422D554E5004D43F3 /* LaunchScreen.storyboard */,
 				CDE159A722D554E5004D43F3 /* Info.plist */,
 			);
@@ -274,6 +386,8 @@
 				CDE1599422D554E4004D43F3 /* Sources */,
 				CDE1599522D554E4004D43F3 /* Frameworks */,
 				CDE1599622D554E4004D43F3 /* Resources */,
+				CD2F014A22D8131500A06645 /* Swift Lint */,
+				CD2F014B22D8132500A06645 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -350,7 +464,6 @@
 				CDA92ABE22D572A900696014 /* Environment.plist in Resources */,
 				CDE159A622D554E5004D43F3 /* LaunchScreen.storyboard in Resources */,
 				CDE159A322D554E5004D43F3 /* Assets.xcassets in Resources */,
-				CDE159A122D554E4004D43F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,21 +478,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD2F014A22D8131500A06645 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CD2F014B22D8132500A06645 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDE1599422D554E4004D43F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2F014222D80FD000A06645 /* EventsListCoordinator.swift in Sources */,
+				CD2F014022D80F9E00A06645 /* Coordinator.swift in Sources */,
+				CD2F013822D80ECD00A06645 /* EventsListView.swift in Sources */,
+				CD2F015722D818A500A06645 /* Dynamic.swift in Sources */,
 				CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */,
+				CD2F013722D80ECD00A06645 /* EventsListViewController.swift in Sources */,
 				CDA92AC522D578F400696014 /* String.swift in Sources */,
-				CDE1599E22D554E4004D43F3 /* ViewController.swift in Sources */,
+				CD2F014422D8108900A06645 /* AppCoordinator.swift in Sources */,
 				CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */,
+				CD2F013922D80ECD00A06645 /* EventsListViewModel.swift in Sources */,
 				CD8AC17122D65C07004539C9 /* Event.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
 				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,
+				CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */,
 				CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */,
 				CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */,
 				CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */,
+				CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */,
+				CD2F013D22D80F1C00A06645 /* BaseView.swift in Sources */,
 				CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */,
 				CDA92ABB22D572A900696014 /* EndPointType.swift in Sources */,
 			);
@@ -406,14 +569,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CDE1599F22D554E4004D43F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDE159A022D554E4004D43F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CDE159A422D554E5004D43F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -548,6 +703,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AC5F23QLW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EventsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,6 +727,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AC5F23QLW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EventsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
