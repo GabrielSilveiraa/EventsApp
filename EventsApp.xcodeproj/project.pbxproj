@@ -23,6 +23,10 @@
 		CD2F2E5B22D8FC1A0095FB7C /* EventsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */; };
 		CD2F2E5C22D8FC1A0095FB7C /* EventsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5A22D8FC1A0095FB7C /* EventsListViewModelTests.swift */; };
 		CD2F2E5E22D8FD860095FB7C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5D22D8FD860095FB7C /* UIViewController.swift */; };
+		CD2F2E6622DA659E0095FB7C /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6122DA659E0095FB7C /* EventDetailsViewController.swift */; };
+		CD2F2E6722DA659E0095FB7C /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6222DA659E0095FB7C /* EventDetailsView.swift */; };
+		CD2F2E6822DA659E0095FB7C /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6322DA659E0095FB7C /* EventDetailsViewModel.swift */; };
+		CD2F2E6922DA659E0095FB7C /* EventDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6422DA659E0095FB7C /* EventDetailsService.swift */; };
 		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
 		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
 		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
@@ -72,6 +76,10 @@
 		CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewControllerTests.swift; sourceTree = "<group>"; };
 		CD2F2E5A22D8FC1A0095FB7C /* EventsListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewModelTests.swift; sourceTree = "<group>"; };
 		CD2F2E5D22D8FD860095FB7C /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CD2F2E6122DA659E0095FB7C /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		CD2F2E6222DA659E0095FB7C /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		CD2F2E6322DA659E0095FB7C /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
+		CD2F2E6422DA659E0095FB7C /* EventDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsService.swift; sourceTree = "<group>"; };
 		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				CD2F013022D80E5A00A06645 /* EventsList */,
+				CD2F2E5F22DA65750095FB7C /* EventDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,6 +213,49 @@
 				CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CD2F2E5F22DA65750095FB7C /* EventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E6D22DA65CE0095FB7C /* View */,
+				CD2F2E6C22DA65C90095FB7C /* Service */,
+				CD2F2E6B22DA65C00095FB7C /* ViewModel */,
+				CD2F2E6A22DA65B80095FB7C /* ViewController */,
+			);
+			path = EventDetails;
+			sourceTree = "<group>";
+		};
+		CD2F2E6A22DA65B80095FB7C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E6122DA659E0095FB7C /* EventDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD2F2E6B22DA65C00095FB7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E6322DA659E0095FB7C /* EventDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD2F2E6C22DA65C90095FB7C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E6422DA659E0095FB7C /* EventDetailsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD2F2E6D22DA65CE0095FB7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E6222DA659E0095FB7C /* EventDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD8AC16F22D65BF0004539C9 /* Models */ = {
@@ -535,17 +587,21 @@
 				CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */,
 				CD2F013722D80ECD00A06645 /* EventsListViewController.swift in Sources */,
 				CDA92AC522D578F400696014 /* String.swift in Sources */,
+				CD2F2E6722DA659E0095FB7C /* EventDetailsView.swift in Sources */,
 				CD2F014422D8108900A06645 /* AppCoordinator.swift in Sources */,
 				CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */,
 				CD2F013922D80ECD00A06645 /* EventsListViewModel.swift in Sources */,
 				CD8AC17122D65C07004539C9 /* Event.swift in Sources */,
+				CD2F2E6622DA659E0095FB7C /* EventDetailsViewController.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
 				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,
 				CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */,
 				CD2F2E5E22D8FD860095FB7C /* UIViewController.swift in Sources */,
+				CD2F2E6822DA659E0095FB7C /* EventDetailsViewModel.swift in Sources */,
 				CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */,
 				CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */,
 				CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */,
+				CD2F2E6922DA659E0095FB7C /* EventDetailsService.swift in Sources */,
 				CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */,
 				CD2F013D22D80F1C00A06645 /* BaseView.swift in Sources */,
 				CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */,
