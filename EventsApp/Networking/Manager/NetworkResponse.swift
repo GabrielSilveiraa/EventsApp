@@ -53,3 +53,5 @@ extension NetworkError: LocalizedError {
         }
     }
 }
+
+struct Response200: Decodable {}

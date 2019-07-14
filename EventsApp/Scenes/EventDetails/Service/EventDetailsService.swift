@@ -23,8 +23,14 @@ class EventDetailsService {
 extension EventDetailsService: EventDetailsServiceProtocol {
     func checkin(checkinObject: CheckinObject, completion: @escaping (Result<Bool, Error>) -> Void) {
         let endPoint = EventApi.checkin(checkinObject)
-        networkManager.request(endPoint) { (result: Result<Bool, Error>)  in
-            completion(result)
+        networkManager.request(endPoint) { (result: Result<Response200, Error>)  in
+            switch result {
+            case .success:
+                completion(.success(true))
+            
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
     }
 }

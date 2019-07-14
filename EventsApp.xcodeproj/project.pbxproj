@@ -30,6 +30,7 @@
 		CD2F2E7522DA86E80095FB7C /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7422DA86E80095FB7C /* UINavigationController.swift */; };
 		CD2F2E7722DBA9950095FB7C /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7622DBA9950095FB7C /* Encodable.swift */; };
 		CD2F2E7A22DBB24D0095FB7C /* CheckinObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */; };
+		CD2F2E7C22DBC9BA0095FB7C /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7B22DBC9BA0095FB7C /* Maps.swift */; };
 		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
 		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
 		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
@@ -86,6 +87,7 @@
 		CD2F2E7422DA86E80095FB7C /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		CD2F2E7622DBA9950095FB7C /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinObject.swift; sourceTree = "<group>"; };
+		CD2F2E7B22DBC9BA0095FB7C /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				CD2F015622D818A500A06645 /* Dynamic.swift */,
 				CD2F013C22D80F1C00A06645 /* BaseView.swift */,
+				CD2F2E7B22DBC9BA0095FB7C /* Maps.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */,
 				CD2F013922D80ECD00A06645 /* EventsListViewModel.swift in Sources */,
 				CD8AC17122D65C07004539C9 /* Event.swift in Sources */,
+				CD2F2E7C22DBC9BA0095FB7C /* Maps.swift in Sources */,
 				CD2F2E7522DA86E80095FB7C /* UINavigationController.swift in Sources */,
 				CD2F2E6622DA659E0095FB7C /* EventDetailsViewController.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,

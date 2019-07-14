@@ -41,6 +41,7 @@ final class EventsListViewController: UIViewController {
         configBind()
     }
     
+    // MARK: - Functions
     private func configBind() {
         viewModel.eventCells.bind { [weak self] _ in
             guard let self = self else { return }

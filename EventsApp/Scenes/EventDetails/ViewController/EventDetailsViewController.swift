@@ -38,6 +38,12 @@ final class EventDetailsViewController: UIViewController {
         title = viewModel.navigationTitle
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configBind()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -50,13 +56,26 @@ final class EventDetailsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    // MARK: - Functions
+    private func configBind() {
+        viewModel.successCheckin.bind { [weak self] message in
+            guard let self = self, let message = message else { return }
+            self.showAlert(message: message)
+        }
+        
+        viewModel.error.bind { [weak self] error in
+            guard let self = self, let error = error else { return }
+            self.showAlert(message: error)
+        }
+    }
+    
     // MARK: - Actions
     @objc private func didPressCheckinButton() {
-        
+        viewModel.checkin()
     }
     
     @objc private func didPressShareButton() {
-        
+        viewModel.share()
     }
     
     @objc private func didPressMapsButton() {

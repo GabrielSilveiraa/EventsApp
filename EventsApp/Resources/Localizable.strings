@@ -13,6 +13,7 @@
 "shareButtonTitle" = "Compartilhar";
 "checkinButtonTitle" = "Fazer checkin";
 "mapsButtonTitle" = "Abrir em Mapas";
+"checkinSuccessMessage"= "Checkin efetuado com sucesso!";
 
 //Errors
 "noConnectionError" = "Check your connection";

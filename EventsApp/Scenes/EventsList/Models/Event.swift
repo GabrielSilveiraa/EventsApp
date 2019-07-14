@@ -11,11 +11,10 @@ import Foundation
 typealias Events = [Event]
 
 struct Event: Decodable {
-    let id, title: String
+    let id, title, description: String
     let price: Double
     let latitude, longitude: GeoPoint
     let image: URL
-    let description: String
     let date: Int
     let people: [Person]
     let cupons: [Cupon]
@@ -46,6 +45,16 @@ enum GeoPoint: Decodable {
         }
         throw DecodingError.typeMismatch(GeoPoint.self,
                                          DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Point"))
+    }
+    
+    var asDouble: Double {
+        switch self {
+        case .double(let lat):
+            return lat
+            
+        case .string(let lat):
+            return Double(lat) ?? 0.0
+        }
     }
 }
 

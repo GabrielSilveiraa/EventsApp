@@ -122,7 +122,6 @@ final class EventDetailsView: BaseView {
             $0.leading.equalToSuperview().inset(7)
             $0.trailing.equalToSuperview().inset(15)
             $0.height.equalTo(40)
-            $0.bottom.equalToSuperview()
         }
     }
 }

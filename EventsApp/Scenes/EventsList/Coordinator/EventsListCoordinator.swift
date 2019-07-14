@@ -10,6 +10,7 @@ import UIKit
 
 protocol EventsListNavigationDelegate: AnyObject {
     func goToDetails(event: Event)
+    func share(_ itens: [Any])
 }
 
 class EventsListCoordinator {
@@ -31,8 +32,13 @@ extension EventsListCoordinator: Coordinator {
 
 extension EventsListCoordinator: EventsListNavigationDelegate {
     func goToDetails(event: Event) {
-        let viewModel = EventDetailsViewModel(event: event)
+        let viewModel = EventDetailsViewModel(event: event, navigationDelegate: self)
         let viewController = EventDetailsViewController(viewModel: viewModel)
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func share(_ itens: [Any]) {
+        let activityVC = UIActivityViewController(activityItems: itens, applicationActivities: nil)
+        navigationController.present(activityVC, animated: true)
     }
 }
