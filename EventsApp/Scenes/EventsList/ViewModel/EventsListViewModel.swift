@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 protocol EventsListViewModelProtocol: AnyObject {
     var eventCells: Dynamic<[EventsListCellViewModelProtocol]> { get }
     var loading: Dynamic<Bool> { get }
@@ -57,12 +55,6 @@ extension EventsListViewModel: EventsListViewModelProtocol {
     
     func didSelect(row: Int) {
         let event = events[row]
-        if Thread.isMainThread {
-            navigationDelegate?.goToDetails(event: event)
-        } else {
-            DispatchQueue.main.async {
-                self.navigationDelegate?.goToDetails(event: event)
-            }
-        }
+        navigationDelegate?.goToDetails(event: event)
     }
 }

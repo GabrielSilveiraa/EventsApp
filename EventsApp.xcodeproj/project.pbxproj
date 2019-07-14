@@ -14,8 +14,6 @@
 		CD2F014022D80F9E00A06645 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013F22D80F9E00A06645 /* Coordinator.swift */; };
 		CD2F014222D80FD000A06645 /* EventsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */; };
 		CD2F014422D8108900A06645 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F014322D8108900A06645 /* AppCoordinator.swift */; };
-		CD2F014E22D8142400A06645 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2F014C22D8142400A06645 /* Kingfisher.framework */; };
-		CD2F014F22D8142400A06645 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2F014D22D8142400A06645 /* SnapKit.framework */; };
 		CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */; };
 		CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */; };
 		CD2F015722D818A500A06645 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015622D818A500A06645 /* Dynamic.swift */; };
@@ -27,6 +25,11 @@
 		CD2F2E6722DA659E0095FB7C /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6222DA659E0095FB7C /* EventDetailsView.swift */; };
 		CD2F2E6822DA659E0095FB7C /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6322DA659E0095FB7C /* EventDetailsViewModel.swift */; };
 		CD2F2E6922DA659E0095FB7C /* EventDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E6422DA659E0095FB7C /* EventDetailsService.swift */; };
+		CD2F2E7022DA729D0095FB7C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2F2E6E22DA729D0095FB7C /* Kingfisher.framework */; };
+		CD2F2E7122DA729D0095FB7C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2F2E6F22DA729D0095FB7C /* SnapKit.framework */; };
+		CD2F2E7522DA86E80095FB7C /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7422DA86E80095FB7C /* UINavigationController.swift */; };
+		CD2F2E7722DBA9950095FB7C /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7622DBA9950095FB7C /* Encodable.swift */; };
+		CD2F2E7A22DBB24D0095FB7C /* CheckinObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */; };
 		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
 		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
 		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
@@ -67,8 +70,6 @@
 		CD2F013F22D80F9E00A06645 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListCoordinator.swift; sourceTree = "<group>"; };
 		CD2F014322D8108900A06645 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		CD2F014C22D8142400A06645 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = EventsApp/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
-		CD2F014D22D8142400A06645 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = EventsApp/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListTableViewCell.swift; sourceTree = "<group>"; };
 		CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListCellViewModelViewModel.swift; sourceTree = "<group>"; };
 		CD2F015622D818A500A06645 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
@@ -80,6 +81,11 @@
 		CD2F2E6222DA659E0095FB7C /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		CD2F2E6322DA659E0095FB7C /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
 		CD2F2E6422DA659E0095FB7C /* EventDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsService.swift; sourceTree = "<group>"; };
+		CD2F2E6E22DA729D0095FB7C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		CD2F2E6F22DA729D0095FB7C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		CD2F2E7422DA86E80095FB7C /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		CD2F2E7622DBA9950095FB7C /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinObject.swift; sourceTree = "<group>"; };
 		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
@@ -111,8 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2F014E22D8142400A06645 /* Kingfisher.framework in Frameworks */,
-				CD2F014F22D8142400A06645 /* SnapKit.framework in Frameworks */,
+				CD2F2E7022DA729D0095FB7C /* Kingfisher.framework in Frameworks */,
+				CD2F2E7122DA729D0095FB7C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				CD2F013A22D80EDB00A06645 /* View */,
+				CD8AC16F22D65BF0004539C9 /* Models */,
 				CDA92AB522D572A900696014 /* Service */,
 				CD2F013322D80E8000A06645 /* Coordinator */,
 				CD2F013222D80E7900A06645 /* ViewModel */,
@@ -201,8 +208,8 @@
 		CD2F015022D8142700A06645 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD2F014C22D8142400A06645 /* Kingfisher.framework */,
-				CD2F014D22D8142400A06645 /* SnapKit.framework */,
+				CD2F2E6E22DA729D0095FB7C /* Kingfisher.framework */,
+				CD2F2E6F22DA729D0095FB7C /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CD2F2E6D22DA65CE0095FB7C /* View */,
+				CD2F2E7822DBB2370095FB7C /* Models */,
 				CD2F2E6C22DA65C90095FB7C /* Service */,
 				CD2F2E6B22DA65C00095FB7C /* ViewModel */,
 				CD2F2E6A22DA65B80095FB7C /* ViewController */,
@@ -256,6 +264,14 @@
 				CD2F2E6222DA659E0095FB7C /* EventDetailsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CD2F2E7822DBB2370095FB7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CD8AC16F22D65BF0004539C9 /* Models */ = {
@@ -380,6 +396,8 @@
 			children = (
 				CD2F2E5D22D8FD860095FB7C /* UIViewController.swift */,
 				CDA92AC422D578F400696014 /* String.swift */,
+				CD2F2E7422DA86E80095FB7C /* UINavigationController.swift */,
+				CD2F2E7622DBA9950095FB7C /* Encodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -407,7 +425,6 @@
 			children = (
 				CD2F012F22D80E5400A06645 /* Scenes */,
 				CDA92AA922D572A900696014 /* Networking */,
-				CD8AC16F22D65BF0004539C9 /* Models */,
 				CD2F013E22D80F8800A06645 /* Protocols */,
 				CDA92AC322D5770400696014 /* Extensions */,
 				CD2F013B22D80F1100A06645 /* Utils */,
@@ -583,6 +600,8 @@
 				CD2F014222D80FD000A06645 /* EventsListCoordinator.swift in Sources */,
 				CD2F014022D80F9E00A06645 /* Coordinator.swift in Sources */,
 				CD2F013822D80ECD00A06645 /* EventsListView.swift in Sources */,
+				CD2F2E7A22DBB24D0095FB7C /* CheckinObject.swift in Sources */,
+				CD2F2E7722DBA9950095FB7C /* Encodable.swift in Sources */,
 				CD2F015722D818A500A06645 /* Dynamic.swift in Sources */,
 				CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */,
 				CD2F013722D80ECD00A06645 /* EventsListViewController.swift in Sources */,
@@ -592,6 +611,7 @@
 				CDA92ABA22D572A900696014 /* HTTPMethod.swift in Sources */,
 				CD2F013922D80ECD00A06645 /* EventsListViewModel.swift in Sources */,
 				CD8AC17122D65C07004539C9 /* Event.swift in Sources */,
+				CD2F2E7522DA86E80095FB7C /* UINavigationController.swift in Sources */,
 				CD2F2E6622DA659E0095FB7C /* EventDetailsViewController.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
 				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,

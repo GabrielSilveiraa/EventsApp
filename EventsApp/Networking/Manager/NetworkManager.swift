@@ -26,6 +26,13 @@ class NetworkManager {
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                  timeoutInterval: 10.0)
         request.httpMethod = route.httpMethod.rawValue
+        
+        if let encoding = route.encoding {
+            switch encoding {
+            case .jsonEncoding:
+                try encoding.encode(urlRequest: &request, parameters: route.parameters)
+            }
+        }
         return request
     }
     

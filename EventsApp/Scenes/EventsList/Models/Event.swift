@@ -44,7 +44,8 @@ enum GeoPoint: Decodable {
             self = .string(geoPoint)
             return
         }
-        throw DecodingError.typeMismatch(GeoPoint.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Point"))
+        throw DecodingError.typeMismatch(GeoPoint.self,
+                                         DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Point"))
     }
 }
 

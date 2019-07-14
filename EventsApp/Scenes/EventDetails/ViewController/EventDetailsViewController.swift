@@ -11,6 +11,11 @@ import UIKit
 final class EventDetailsViewController: UIViewController {
     private(set) lazy var baseView: EventDetailsView = {
         let view = EventDetailsView()
+        view.eventImageView.kf.setImage(with: viewModel.eventImageUrl)
+        view.descriptionLabel.text = viewModel.eventDescription
+        view.checkinButton.addTarget(self, action: #selector(didPressCheckinButton), for: .touchUpInside)
+        view.shareButton.addTarget(self, action: #selector(didPressShareButton), for: .touchUpInside)
+        view.mapsButton.addTarget(self, action: #selector(didPressMapsButton), for: .touchUpInside)
         return view
     }()
     
@@ -28,16 +33,33 @@ final class EventDetailsViewController: UIViewController {
     // MARK: - Life Cycle
     override func loadView() {
         super.loadView()
-        view = baseView
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-        configBind()
+        view = baseView
+        title = viewModel.navigationTitle
     }
     
-    private func configBind() {
-        //Config the binds to viewModel here
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    // MARK: - Actions
+    @objc private func didPressCheckinButton() {
+        
+    }
+    
+    @objc private func didPressShareButton() {
+        
+    }
+    
+    @objc private func didPressMapsButton() {
+        
     }
 }
