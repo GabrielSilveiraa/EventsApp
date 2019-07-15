@@ -6,6 +6,16 @@
   Copyright © 2019 Gabriel Silveira. All rights reserved.
 */
 
+//Events List Scene
+"eventsListTitle" = "Eventos";
+
+//Event Detils Scene
+"shareButtonTitle" = "Compartilhar";
+"checkinButtonTitle" = "Fazer checkin";
+"mapsButtonTitle" = "Abrir em Mapas";
+"checkinSuccessMessage"= "Checkin efetuado com sucesso!";
+"noEventImage" = "Unavailable image";
+
 //Errors
 "noConnectionError" = "Check your connection";
 "failedError" = "Request failed";

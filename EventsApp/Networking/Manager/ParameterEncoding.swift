@@ -18,15 +18,9 @@ enum ParameterEncoding {
         switch self {
         case .jsonEncoding:
             guard let parameters = parameters else { return }
-            do {
-                let jsonAsData = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
-                urlRequest.httpBody = jsonAsData
-                if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {
-                    urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-                }
-            } catch {
-                throw error
-            }
+            let jsonAsData = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+            urlRequest.httpBody = jsonAsData
+            urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         }
     }
 }

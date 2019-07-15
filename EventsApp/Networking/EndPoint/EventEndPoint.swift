@@ -10,6 +10,7 @@ import Foundation
 
 enum EventApi {
     case eventsList
+    case checkin(_ checkin: CheckinObject)
 }
 
 extension EventApi: EndPointType {
@@ -24,6 +25,9 @@ extension EventApi: EndPointType {
         switch self {
         case .eventsList:
             return "/events"
+            
+        case .checkin:
+            return "/checkin"
         }
     }
     
@@ -31,6 +35,9 @@ extension EventApi: EndPointType {
         switch self {
         case .eventsList:
             return .get
+        
+        case .checkin:
+            return .post
         }
     }
     
@@ -38,6 +45,9 @@ extension EventApi: EndPointType {
         switch self {
         case .eventsList:
             return nil
+        
+        case .checkin:
+            return .jsonEncoding
         }
     }
     
@@ -45,6 +55,15 @@ extension EventApi: EndPointType {
         switch self {
         case .eventsList:
             return [:]
+            
+        case .checkin(let checkin):
+            var parameters: [String: Any] = [:]
+            do {
+                parameters = try checkin.asDictionary()
+            } catch {
+                print(error)
+            }
+            return parameters
         }
     }
 }

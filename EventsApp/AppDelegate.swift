@@ -5,6 +5,7 @@
 //  Created by Gabriel Silveira on 09/07/19.
 //  Copyright © 2019 Gabriel Silveira. All rights reserved.
 //
+// swiftlint:disable discouraged_optional_collection
 
 import UIKit
 
@@ -24,4 +25,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-
