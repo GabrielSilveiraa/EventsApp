@@ -15,7 +15,7 @@ struct Event: Decodable {
     let price: Double
     let latitude, longitude: GeoPoint
     let image: URL
-    let date: Int
+    let date: Date
     let people: [Person]
     let cupons: [Cupon]
 }
@@ -44,7 +44,7 @@ enum GeoPoint: Decodable {
             return
         }
         throw DecodingError.typeMismatch(GeoPoint.self,
-                                         DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Point"))
+                                         DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for GeoPoint"))
     }
     
     var asDouble: Double {

@@ -22,6 +22,14 @@ final class EventDetailsView: BaseView {
         imageView.kf.indicatorType = .activity
         return imageView
     }()
+    let dateLabel: UILabel = {
+        let label = UILabel(fontType: .bold, size: 20)
+        return label
+    }()
+    let priceLabel: UILabel = {
+        let label = UILabel(fontType: .bold, size: 18)
+        return label
+    }()
     let descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -29,20 +37,20 @@ final class EventDetailsView: BaseView {
     }()
     let shareButton: UIButton = {
         let button = UIButton()
+        button.setupAppearance()
         button.setTitle("shareButtonTitle".localized, for: .normal)
-        button.setTitleColor(.black, for: .normal)
         return button
     }()
     let checkinButton: UIButton = {
         let button = UIButton()
+        button.setupAppearance()
         button.setTitle("checkinButtonTitle".localized, for: .normal)
-        button.setTitleColor(.black, for: .normal)
         return button
     }()
     let mapsButton: UIButton = {
         let button = UIButton()
+        button.setupAppearance()
         button.setTitle("mapsButtonTitle".localized, for: .normal)
-        button.setTitleColor(.black, for: .normal)
         return button
     }()
     
@@ -51,6 +59,8 @@ final class EventDetailsView: BaseView {
         addSubview(scrollView)
         scrollView.addSubview(contentView)
         contentView.addSubview(eventImageView)
+        contentView.addSubview(dateLabel)
+        contentView.addSubview(priceLabel)
         contentView.addSubview(descriptionLabel)
         contentView.addSubview(shareButton)
         contentView.addSubview(checkinButton)
@@ -61,6 +71,8 @@ final class EventDetailsView: BaseView {
         setupScrollViewConstraints()
         setupContentViewConstraints()
         setupEventImageViewConstraints()
+        setupDateLabel()
+        setupPriceLabel()
         setupDescriptionLabel()
         setupShareButton()
         setupCheckinButton()
@@ -70,14 +82,14 @@ final class EventDetailsView: BaseView {
     private func setupScrollViewConstraints() {
         scrollView.snp.makeConstraints {
             $0.edges.equalToSuperview()
-            $0.size.equalToSuperview()
+            $0.width.equalToSuperview()
         }
     }
     
     private func setupContentViewConstraints() {
         contentView.snp.makeConstraints {
             $0.edges.equalToSuperview()
-            $0.size.equalToSuperview()
+            $0.width.equalToSuperview()
         }
     }
     
@@ -90,9 +102,25 @@ final class EventDetailsView: BaseView {
         }
     }
     
+    private func setupDateLabel() {
+        dateLabel.snp.makeConstraints {
+            $0.top.equalTo(eventImageView.snp.bottom).offset(20)
+            $0.leading.equalToSuperview().inset(7)
+            $0.trailing.equalToSuperview().inset(15)
+        }
+    }
+    
+    private func setupPriceLabel() {
+        priceLabel.snp.makeConstraints {
+            $0.top.equalTo(dateLabel.snp.bottom).offset(20)
+            $0.leading.equalToSuperview().inset(7)
+            $0.trailing.equalToSuperview().inset(15)
+        }
+    }
+    
     private func setupDescriptionLabel() {
         descriptionLabel.snp.makeConstraints {
-            $0.top.equalTo(eventImageView.snp.bottom).offset(20)
+            $0.top.equalTo(priceLabel.snp.bottom).offset(20)
             $0.leading.equalToSuperview().inset(7)
             $0.trailing.equalToSuperview().inset(15)
         }
@@ -122,6 +150,7 @@ final class EventDetailsView: BaseView {
             $0.leading.equalToSuperview().inset(7)
             $0.trailing.equalToSuperview().inset(15)
             $0.height.equalTo(40)
+            $0.bottom.equalToSuperview().inset(20)
         }
     }
 }

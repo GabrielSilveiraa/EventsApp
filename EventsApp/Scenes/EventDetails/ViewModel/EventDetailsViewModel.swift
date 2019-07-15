@@ -10,6 +10,9 @@ import Foundation
 import CoreLocation
 
 protocol EventDetailsViewModelProtocol: AnyObject {
+    var imagePlaceholderTitle: String { get }
+    var eventDate: String { get }
+    var eventPrice: String { get }
     var eventDescription: String { get }
     var navigationTitle: String { get }
     var eventImageUrl: URL { get }
@@ -38,6 +41,15 @@ class EventDetailsViewModel {
 }
 
 extension EventDetailsViewModel: EventDetailsViewModelProtocol {
+    var imagePlaceholderTitle: String {
+        return "noEventImage".localized
+    }
+    var eventDate: String {
+        return event.date.ddMMyyyy
+    }
+    var eventPrice: String {
+        return event.price.currencyFormat
+    }
     var eventDescription: String {
         return event.description
     }

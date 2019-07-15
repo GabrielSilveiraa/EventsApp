@@ -11,7 +11,10 @@ import UIKit
 final class EventDetailsViewController: UIViewController {
     private(set) lazy var baseView: EventDetailsView = {
         let view = EventDetailsView()
-        view.eventImageView.kf.setImage(with: viewModel.eventImageUrl)
+        view.eventImageView.kf.setImage(with: viewModel.eventImageUrl,
+                                        placeholder: UILabel(text: viewModel.imagePlaceholderTitle))
+        view.priceLabel.text = viewModel.eventPrice
+        view.dateLabel.text = viewModel.eventDate
         view.descriptionLabel.text = viewModel.eventDescription
         view.checkinButton.addTarget(self, action: #selector(didPressCheckinButton), for: .touchUpInside)
         view.shareButton.addTarget(self, action: #selector(didPressShareButton), for: .touchUpInside)
@@ -79,6 +82,6 @@ final class EventDetailsViewController: UIViewController {
     }
     
     @objc private func didPressMapsButton() {
-        
+        viewModel.maps()
     }
 }

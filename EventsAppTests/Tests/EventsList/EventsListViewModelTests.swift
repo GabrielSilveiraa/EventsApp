@@ -71,10 +71,15 @@ class MockEventsListService: EventsListServiceProtocol {
 
 class FakeEventsListCoordinator: EventsListNavigationDelegate {
     var eventDetailsCalled = false
+    var shareCalled = false
     var selectedEvent: Event?
     
     func goToDetails(event: Event) {
         eventDetailsCalled = true
         selectedEvent = event
+    }
+    
+    func share(_ itens: [Any]) {
+        shareCalled = true
     }
 }

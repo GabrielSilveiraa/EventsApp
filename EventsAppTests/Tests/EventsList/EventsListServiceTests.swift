@@ -8,6 +8,8 @@
 
 import XCTest
 @testable import EventsApp
+// swiftlint:disable force_unwrapping
+// swiftlint:disable force_try
 
 class EventsListServiceTests: XCTestCase {
     func testServiceSuccessResponse() {
@@ -23,6 +25,5 @@ class EventsListServiceTests: XCTestCase {
         let firstEvent: Event = loadJson(filename: "Event")!
         XCTAssertEqual(eventsResponse.count, 5)
         XCTAssertEqual(firstEvent, eventsResponse.first)
-        
     }
 }

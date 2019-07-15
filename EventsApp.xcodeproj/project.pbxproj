@@ -31,6 +31,8 @@
 		CD2F2E7722DBA9950095FB7C /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7622DBA9950095FB7C /* Encodable.swift */; };
 		CD2F2E7A22DBB24D0095FB7C /* CheckinObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */; };
 		CD2F2E7C22DBC9BA0095FB7C /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7B22DBC9BA0095FB7C /* Maps.swift */; };
+		CD2F2E8022DBD9FD0095FB7C /* EventDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E7F22DBD9FD0095FB7C /* EventDetailsViewControllerTests.swift */; };
+		CD2F2E8222DBDA180095FB7C /* EventDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E8122DBDA180095FB7C /* EventDetailsViewModelTests.swift */; };
 		CD8AC17122D65C07004539C9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17022D65C07004539C9 /* Event.swift */; };
 		CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8AC17322D66566004539C9 /* XCTestCase.swift */; };
 		CD8AC17822D665AF004539C9 /* EventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = CD8AC17722D665AF004539C9 /* EventsSuccess.json */; };
@@ -48,6 +50,10 @@
 		CDA92AC522D578F400696014 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC422D578F400696014 /* String.swift */; };
 		CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC622D57F3B00696014 /* EventsListService.swift */; };
 		CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */; };
+		CDBD9AFD22DCA99600BDA8E4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD9AFC22DCA99600BDA8E4 /* UILabel.swift */; };
+		CDBD9AFF22DCB55400BDA8E4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD9AFE22DCB55400BDA8E4 /* Date.swift */; };
+		CDBD9B0122DCB5D000BDA8E4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD9B0022DCB5D000BDA8E4 /* Double.swift */; };
+		CDBD9B0322DCB93C00BDA8E4 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD9B0222DCB93C00BDA8E4 /* UIButton.swift */; };
 		CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE1599B22D554E4004D43F3 /* AppDelegate.swift */; };
 		CDE159A322D554E5004D43F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE159A222D554E5004D43F3 /* Assets.xcassets */; };
 		CDE159A622D554E5004D43F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE159A422D554E5004D43F3 /* LaunchScreen.storyboard */; };
@@ -88,6 +94,8 @@
 		CD2F2E7622DBA9950095FB7C /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		CD2F2E7922DBB24D0095FB7C /* CheckinObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinObject.swift; sourceTree = "<group>"; };
 		CD2F2E7B22DBC9BA0095FB7C /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		CD2F2E7F22DBD9FD0095FB7C /* EventDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		CD2F2E8122DBDA180095FB7C /* EventDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		CD8AC17022D65C07004539C9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CD8AC17322D66566004539C9 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD8AC17722D665AF004539C9 /* EventsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsSuccess.json; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 		CDA92AC422D578F400696014 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CDA92AC622D57F3B00696014 /* EventsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListService.swift; sourceTree = "<group>"; };
 		CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		CDBD9AFC22DCA99600BDA8E4 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		CDBD9AFE22DCB55400BDA8E4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		CDBD9B0022DCB5D000BDA8E4 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		CDBD9B0222DCB93C00BDA8E4 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		CDE1599822D554E4004D43F3 /* EventsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE1599B22D554E4004D43F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE159A222D554E5004D43F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -277,6 +289,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		CD2F2E7E22DBD9B00095FB7C /* EventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F2E7F22DBD9FD0095FB7C /* EventDetailsViewControllerTests.swift */,
+				CD2F2E8122DBDA180095FB7C /* EventDetailsViewModelTests.swift */,
+			);
+			path = EventDetails;
+			sourceTree = "<group>";
+		};
 		CD8AC16F22D65BF0004539C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				CD8AC17A22D66839004539C9 /* Scenes */,
+				CD2F2E7E22DBD9B00095FB7C /* EventDetails */,
+				CD8AC17B22D66840004539C9 /* EventsList */,
 				CDA92AC822D5834A00696014 /* NetworkManagerTests.swift */,
 				CD2F2E5622D8FB940095FB7C /* CoordinatorTests.swift */,
 			);
@@ -314,7 +337,6 @@
 		CD8AC17A22D66839004539C9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CD8AC17B22D66840004539C9 /* EventsList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -401,6 +423,10 @@
 				CDA92AC422D578F400696014 /* String.swift */,
 				CD2F2E7422DA86E80095FB7C /* UINavigationController.swift */,
 				CD2F2E7622DBA9950095FB7C /* Encodable.swift */,
+				CDBD9AFC22DCA99600BDA8E4 /* UILabel.swift */,
+				CDBD9AFE22DCB55400BDA8E4 /* Date.swift */,
+				CDBD9B0022DCB5D000BDA8E4 /* Double.swift */,
+				CDBD9B0222DCB93C00BDA8E4 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -603,8 +629,10 @@
 				CD2F014222D80FD000A06645 /* EventsListCoordinator.swift in Sources */,
 				CD2F014022D80F9E00A06645 /* Coordinator.swift in Sources */,
 				CD2F013822D80ECD00A06645 /* EventsListView.swift in Sources */,
+				CDBD9AFF22DCB55400BDA8E4 /* Date.swift in Sources */,
 				CD2F2E7A22DBB24D0095FB7C /* CheckinObject.swift in Sources */,
 				CD2F2E7722DBA9950095FB7C /* Encodable.swift in Sources */,
+				CDBD9AFD22DCA99600BDA8E4 /* UILabel.swift in Sources */,
 				CD2F015722D818A500A06645 /* Dynamic.swift in Sources */,
 				CDA92AB822D572A900696014 /* NetworkManager.swift in Sources */,
 				CD2F013722D80ECD00A06645 /* EventsListViewController.swift in Sources */,
@@ -615,6 +643,7 @@
 				CD2F013922D80ECD00A06645 /* EventsListViewModel.swift in Sources */,
 				CD8AC17122D65C07004539C9 /* Event.swift in Sources */,
 				CD2F2E7C22DBC9BA0095FB7C /* Maps.swift in Sources */,
+				CDBD9B0322DCB93C00BDA8E4 /* UIButton.swift in Sources */,
 				CD2F2E7522DA86E80095FB7C /* UINavigationController.swift in Sources */,
 				CD2F2E6622DA659E0095FB7C /* EventDetailsViewController.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
@@ -629,6 +658,7 @@
 				CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */,
 				CD2F013D22D80F1C00A06645 /* BaseView.swift in Sources */,
 				CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */,
+				CDBD9B0122DCB5D000BDA8E4 /* Double.swift in Sources */,
 				CDA92ABB22D572A900696014 /* EndPointType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,8 +668,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD2F2E5B22D8FC1A0095FB7C /* EventsListViewControllerTests.swift in Sources */,
+				CD2F2E8022DBD9FD0095FB7C /* EventDetailsViewControllerTests.swift in Sources */,
 				CD2F2E5722D8FB940095FB7C /* CoordinatorTests.swift in Sources */,
 				CD8AC17D22D66890004539C9 /* EventsListServiceTests.swift in Sources */,
+				CD2F2E8222DBDA180095FB7C /* EventDetailsViewModelTests.swift in Sources */,
 				CD8AC17422D66566004539C9 /* XCTestCase.swift in Sources */,
 				CDA92AC922D5834A00696014 /* NetworkManagerTests.swift in Sources */,
 				CD2F2E5C22D8FC1A0095FB7C /* EventsListViewModelTests.swift in Sources */,
