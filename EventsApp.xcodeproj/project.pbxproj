@@ -14,8 +14,8 @@
 		CD2F014022D80F9E00A06645 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F013F22D80F9E00A06645 /* Coordinator.swift */; };
 		CD2F014222D80FD000A06645 /* EventsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */; };
 		CD2F014422D8108900A06645 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F014322D8108900A06645 /* AppCoordinator.swift */; };
-		CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */; };
-		CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */; };
+		CD2F015322D8172E00A06645 /* EventsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015222D8172E00A06645 /* EventsListTableViewCell.swift */; };
+		CD2F015522D8176A00A06645 /* EventsListCellViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015422D8176A00A06645 /* EventsListCellViewModelViewModel.swift */; };
 		CD2F015722D818A500A06645 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F015622D818A500A06645 /* Dynamic.swift */; };
 		CD2F2E5722D8FB940095FB7C /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5622D8FB940095FB7C /* CoordinatorTests.swift */; };
 		CD2F2E5B22D8FC1A0095FB7C /* EventsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */; };
@@ -77,8 +77,8 @@
 		CD2F013F22D80F9E00A06645 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CD2F014122D80FD000A06645 /* EventsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListCoordinator.swift; sourceTree = "<group>"; };
 		CD2F014322D8108900A06645 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListTableViewCell.swift; sourceTree = "<group>"; };
-		CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListCellViewModelViewModel.swift; sourceTree = "<group>"; };
+		CD2F015222D8172E00A06645 /* EventsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListTableViewCell.swift; sourceTree = "<group>"; };
+		CD2F015422D8176A00A06645 /* EventsListCellViewModelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListCellViewModelViewModel.swift; sourceTree = "<group>"; };
 		CD2F015622D818A500A06645 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		CD2F2E5622D8FB940095FB7C /* CoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		CD2F2E5922D8FC1A0095FB7C /* EventsListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewControllerTests.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		CD2F013222D80E7900A06645 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CD2F015422D8176A00A06645 /* DragonsListCellViewModelViewModel.swift */,
+				CD2F015422D8176A00A06645 /* EventsListCellViewModelViewModel.swift */,
 				CD2F013622D80ECD00A06645 /* EventsListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -232,7 +232,7 @@
 		CD2F015122D8172200A06645 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CD2F015222D8172E00A06645 /* DragonsListTableViewCell.swift */,
+				CD2F015222D8172E00A06645 /* EventsListTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -648,14 +648,14 @@
 				CD2F2E6622DA659E0095FB7C /* EventDetailsViewController.swift in Sources */,
 				CDA92ABC22D572A900696014 /* EventEndPoint.swift in Sources */,
 				CDA92ABD22D572A900696014 /* Environment.swift in Sources */,
-				CD2F015522D8176A00A06645 /* DragonsListCellViewModelViewModel.swift in Sources */,
+				CD2F015522D8176A00A06645 /* EventsListCellViewModelViewModel.swift in Sources */,
 				CD2F2E5E22D8FD860095FB7C /* UIViewController.swift in Sources */,
 				CD2F2E6822DA659E0095FB7C /* EventDetailsViewModel.swift in Sources */,
 				CDA92AC722D57F3B00696014 /* EventsListService.swift in Sources */,
 				CDA92AB922D572A900696014 /* ParameterEncoding.swift in Sources */,
 				CDE1599C22D554E4004D43F3 /* AppDelegate.swift in Sources */,
 				CD2F2E6922DA659E0095FB7C /* EventDetailsService.swift in Sources */,
-				CD2F015322D8172E00A06645 /* DragonsListTableViewCell.swift in Sources */,
+				CD2F015322D8172E00A06645 /* EventsListTableViewCell.swift in Sources */,
 				CD2F013D22D80F1C00A06645 /* BaseView.swift in Sources */,
 				CDA92AB722D572A900696014 /* NetworkResponse.swift in Sources */,
 				CDBD9B0122DCB5D000BDA8E4 /* Double.swift in Sources */,
